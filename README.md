@@ -1,6 +1,7 @@
 # biz_card
-
+This is  a personal business card in form of an app
 Business Card Layout
+
 
 ## Getting Started
 
