@@ -23,9 +23,10 @@ class MyApp extends StatelessWidget {
         ),
         backgroundColor: Colors.teal,
        body: SafeArea(
+
          child: Padding(
 
-           padding: const EdgeInsets.all(24),
+           padding: const EdgeInsets.all(44),
            child: Column(
              mainAxisAlignment: MainAxisAlignment.center,
              children:<Widget>[
@@ -53,62 +54,65 @@ class MyApp extends StatelessWidget {
                  ),
 
                ),
-               SizedBox(height: 20,),
-               Container(
+
+               SizedBox(height: 20,
+               child: Divider(thickness: 2,
+               color: Colors.white,),
+               ),
+               Card(
                  color: Colors.white,
-                 height: 50,
-                 width: 350,
-                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                   children: <Widget>[
-                     Icon(Icons.perm_phone_msg),
-                     SizedBox(width: 50,),
-                     Text("+254 725 581 169"),
-                   ],
+                 child: ListTile(
+                    leading:Icon(Icons.perm_phone_msg),
+                     title: Text("+254 725 581 169"),
+
+                 ),
+               ),
+               SizedBox(height: 20,)
+               ,
+               Card(
+                 color: Colors.white,
+                 child: ListTile(
+                   leading:Icon(Icons.email),
+                   title: Text("juliusndegwa2@gmail.com"),
+
                  ),
                ),
                SizedBox(height: 20,),
-               Container(
+               Card(
                  color: Colors.white,
-                 height: 50,
-                 width: 350,
-                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                   children: <Widget>[
+                 child: ListTile(
+                   leading:
                      Icon(Icons.facebook),
-                     SizedBox(width: 50,),
+                   title:
                      Text("Julius Ndegwa"),
-                   ],
-                 ),
-               ),
-               SizedBox(height: 20,),
-               Container(
-                 color: Colors.white,
-                 height: 50,
-                 width: 350,
-                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                   children: <Widget>[
-                     Icon(Icons.alternate_email),
-                     SizedBox(width: 50,),
-                     Text("ndegwajm"),
-                   ],
-                 ),
-               ),
-               SizedBox(height: 20,),
-               Container(
-                 color: Colors.white,
-                 height: 50,
-                 width: 350,
-                 child: Row(
-                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                   children: <Widget>[
+                 ),
+               ),
+               SizedBox(height: 20,),
+               Card(
+                 color: Colors.white,
+
+                 child: ListTile(
+
+                  leading:
+                     Icon(Icons.alternate_email),
+                  title:
+                     Text("ndegwajm"),
+
+                 ),
+               ),
+               SizedBox(height: 20,),
+               Card(
+                 color: Colors.white,
+
+                 child: ListTile(
+
+
+                   leading:
                      Icon(Icons.location_city),
-                     SizedBox(width: 50,),
+                   title:
                      Text("Mombasa , Kenya"),
-                   ],
                  ),
                ),
                ElevatedButton(
